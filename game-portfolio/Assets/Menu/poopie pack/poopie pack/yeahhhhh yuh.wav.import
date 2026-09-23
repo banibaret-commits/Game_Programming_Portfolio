@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://g63qto1gqrg2"
+path="res://.godot/imported/yeahhhhh yuh.wav-ca9b45c6852dfcfd710b2b0862cf21eb.sample"
+
+[deps]
+
+source_file="res://Assets/Menu/poopie pack/poopie pack/yeahhhhh yuh.wav"
+dest_files=["res://.godot/imported/yeahhhhh yuh.wav-ca9b45c6852dfcfd710b2b0862cf21eb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

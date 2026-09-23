@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cwkvlswic4j8s"
+path="res://.godot/imported/._town.wav-b204cb353035859807132bf8b6bb9774.sample"
+
+[deps]
+
+source_file="res://Assets/Menu/poopie pack/__MACOSX/poopie pack/._town.wav"
+dest_files=["res://.godot/imported/._town.wav-b204cb353035859807132bf8b6bb9774.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

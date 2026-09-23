@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cahr65nefgdrk"
+path="res://.godot/imported/regrowth wip.wav-cb097198bc9cc32c2450f7381f09a0d3.sample"
+
+[deps]
+
+source_file="res://Assets/Menu/poopie pack/poopie pack/regrowth wip.wav"
+dest_files=["res://.godot/imported/regrowth wip.wav-cb097198bc9cc32c2450f7381f09a0d3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
