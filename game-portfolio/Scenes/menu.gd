@@ -1,0 +1,17 @@
+extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+# Exit Button
+func _on_exit_button_pressed() -> void:
+	$ExitButton/AudioStreamPlayer2D.play()
+	await $ExitButton/AudioStreamPlayer2D.finished
+	get_tree().quit()

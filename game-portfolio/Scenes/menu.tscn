@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bk06fkhdrujn1"]
 
+[ext_resource type="Script" uid="uid://bbipp3hdnc1us" path="res://Scenes/menu.gd" id="1_6swd7"]
 [ext_resource type="Texture2D" uid="uid://l1dsyp70lqpq" path="res://Assets/Menu/New free backgrounds part1/background 2/1.png" id="1_wwsa2"]
 [ext_resource type="Texture2D" uid="uid://mp7v2ttfbn0m" path="res://Assets/Menu/New free backgrounds part1/background 2/2.png" id="2_jsrd8"]
 [ext_resource type="Texture2D" uid="uid://dyocg3yxfxxnx" path="res://Assets/Menu/New free backgrounds part1/background 2/3.png" id="3_wbdvm"]
@@ -7,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://4ubcwq11grys" path="res://Assets/Menu/New free backgrounds part1/background 2/5.png" id="5_6swd7"]
 [ext_resource type="FontFile" uid="uid://b3avmjd1worfv" path="res://Assets/Menu/Pixeloid_Font_1_0 (1)/OpenType (.otf)/PixeloidSans-Bold.otf" id="6_wbdvm"]
 [ext_resource type="FontFile" uid="uid://cwf8rcnml0rvq" path="res://Assets/Menu/Pixeloid_Font_1_0 (1)/OpenType (.otf)/PixeloidSans.otf" id="7_q3rjx"]
+[ext_resource type="AudioStream" uid="uid://s12uqk62mk1f" path="res://Assets/Menu/COLORALPHA 50 Menu Interface SFX/WAV/MI_SFX 29.wav" id="9_6swd7"]
 
 [sub_resource type="Theme" id="Theme_0nfyp"]
 Label/colors/font_shadow_color = Color(0.9989471, 0.4058072, 0.52094066, 1)
@@ -22,69 +24,92 @@ Button/styles/hover_pressed = SubResource("StyleBoxFlat_hd34f")
 Button/styles/normal = SubResource("StyleBoxFlat_nrw4g")
 
 [node name="Menu" type="Node2D" unique_id=112997396]
+script = ExtResource("1_6swd7")
 
 [node name="Background_I dont know if i keep blue ones" type="Node2D" parent="." unique_id=1942548108]
 
 [node name="Parallax2D" type="Parallax2D" parent="Background_I dont know if i keep blue ones" unique_id=75416375]
+scroll_offset = Vector2(20, 19)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background_I dont know if i keep blue ones/Parallax2D" unique_id=2075502086]
 modulate = Color(0.5802759, 0.99999994, 0.6069235, 1)
+position = Vector2(554.25, 303.93802)
+scale = Vector2(2.0286458, 2.0493827)
 texture = ExtResource("1_wwsa2")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Background_I dont know if i keep blue ones/Parallax2D" unique_id=1847143784]
+position = Vector2(561.05597, 303.93802)
+scale = Vector2(2.041861, 2.049)
 texture = ExtResource("2_jsrd8")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Background_I dont know if i keep blue ones/Parallax2D" unique_id=19436852]
+position = Vector2(556, 303.93802)
+scale = Vector2(2.03125, 2.049)
 texture = ExtResource("3_wbdvm")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Background_I dont know if i keep blue ones/Parallax2D" unique_id=982169246]
+position = Vector2(556.50006, 303.93802)
+scale = Vector2(2.029514, 2.049)
 texture = ExtResource("4_q3rjx")
 
 [node name="Sprite2D5" type="Sprite2D" parent="Background_I dont know if i keep blue ones/Parallax2D" unique_id=1366431849]
 modulate = Color(0.7321656, 1, 0.7467306, 1)
+position = Vector2(556, 300.93802)
+scale = Vector2(2.034722, 2.049)
 texture = ExtResource("5_6swd7")
 
 [node name="Title" type="MarginContainer" parent="." unique_id=402739186]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -121.0
-offset_top = -153.0
-offset_right = 110.0
-offset_bottom = -122.0
-grow_horizontal = 2
+offset_left = 386.0
+offset_top = 14.0
+offset_right = 781.0
+offset_bottom = 92.0
+size_flags_vertical = 0
+offset_transform_enabled = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Title" unique_id=370149851]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+offset_transform_enabled = true
 
 [node name="Label" type="Label" parent="Title/VBoxContainer" unique_id=29625929]
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 0
+offset_transform_enabled = true
 theme = SubResource("Theme_0nfyp")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("6_wbdvm")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 40
 text = "MY COZY GAMES"
 
 [node name="Label2" type="Label" parent="Title/VBoxContainer" unique_id=1939880621]
 layout_mode = 2
 size_flags_horizontal = 4
+offset_transform_enabled = true
 theme_override_colors/font_shadow_color = Color(0.45591325, 0.9011736, 0.6174523, 1)
 theme_override_fonts/font = ExtResource("7_q3rjx")
+theme_override_font_sizes/font_size = 20
 text = "MADE BY ELISHA LUKIBI"
 
 [node name="ExitButton" type="Button" parent="." unique_id=804173042]
-offset_left = 223.0
-offset_top = -158.0
-offset_right = 284.0
-offset_bottom = -143.0
+offset_left = 978.0
+offset_top = 22.0
+offset_right = 1122.0
+offset_bottom = 65.0
+offset_transform_enabled = true
 theme = SubResource("Theme_ofgdy")
 theme_override_colors/font_color = Color(0.4205758, 0.92644745, 0.26149434, 1)
 theme_override_colors/font_pressed_color = Color(0.35028103, 0.9234885, 0.4500816, 1)
 theme_override_colors/font_hover_color = Color(0.9843137, 0.29411766, 0.5568628, 0.8509804)
 theme_override_fonts/font = ExtResource("6_wbdvm")
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 30
 text = "EXIT
 "
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ExitButton" unique_id=70984939]
+position = Vector2(-978, -22)
+stream = ExtResource("9_6swd7")
+volume_db = 10.0
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
