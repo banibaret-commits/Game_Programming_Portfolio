@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://w5lvlgd0vlh6"]
+
+[ext_resource type="AudioStream" uid="uid://be02mlbsh1vu1" path="res://Assets/Menu/poopie pack/poopie pack/start.wav" id="1_xlmnt"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=1993091919]
+stream = ExtResource("1_xlmnt")
+autoplay = true
